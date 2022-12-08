@@ -118,7 +118,7 @@ function! s:Cppman(page)
   endif
 
   """ Vim Viewer
-  setl mouse=a
+  setl mouse=n
   setl colorcolumn=0
 
 
