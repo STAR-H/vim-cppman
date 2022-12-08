@@ -33,7 +33,7 @@ function! s:reload()
   setl ma
   echo "Loading..."
   exec "%d"
-  exec "0r! cppman --force-columns " . (winwidth(0) - 2) . " '" . g:page_name . "'"
+  exec "0r! cppman --force-columns " . (winwidth(0) - 3) . " '" . g:page_name . "'"
   setl ro
   setl noma
   setl nomod
@@ -62,7 +62,7 @@ function! LoadNewPage()
 endfunction
 
 function! s:Cppman(page)
-  vertical bo new
+  horizontal bo new
   setlocal buftype=nofile
   setlocal bufhidden=delete
   setlocal noswapfile
